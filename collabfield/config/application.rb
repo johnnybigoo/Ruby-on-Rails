@@ -12,6 +12,7 @@ module Collabfield
     config.load_defaults 6.1
 
     # Configuration for the application, engines, and railties goes here.
+		config.action_controller.include_all_helpers = false
     #
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.

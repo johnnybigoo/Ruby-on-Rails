@@ -267,6 +267,7 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    will_paginate (3.1.8)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.4.2)
@@ -276,6 +277,7 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
+  bindex (~> 0.8.1)
   bootsnap (>= 1.4.4)
   bootstrap-sass (~> 3.3.6)
   bootstrap_form
@@ -304,9 +306,10 @@ DEPENDENCIES
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.0)
+  will_paginate (~> 3.1.0)
 
 RUBY VERSION
    ruby 2.7.1p83
 
 BUNDLED WITH
-   2.2.3
+   2.2.15

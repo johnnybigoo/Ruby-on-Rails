@@ -6,6 +6,7 @@ export default function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>OneBitFood V2</title>
+				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
 			<main>

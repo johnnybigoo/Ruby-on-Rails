@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Header = () => {
 	return (
 		<Navbar bg="white" expand="lg" className="border-bottom border-custom-gray">
-			<Navbar.Brand>
+			<Navbar.Brand className='mx-3'>
 				<Link href="/restaurants">
 					<a>
 						<Image

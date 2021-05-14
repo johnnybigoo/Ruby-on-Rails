@@ -13,7 +13,7 @@ export default function MyApp({ Component, pageProps }) {
 
 			<main>
 				<Header />
-				<Container className="mt-5">
+				<Container className="mt-6">
 					<Component {...pageProps} />
 				</Container>
 			</main>

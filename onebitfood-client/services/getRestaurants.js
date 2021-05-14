@@ -4,7 +4,7 @@ export default function getRestaurants() {
 	const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 	const { data, error } = useSWR(
-		`${process.env.apiUrl}/api/restaurants${params}`,
+		`${process.env.apiUrl}/api/restaurants`,
 		fetcher,
 		{ revalidateOnFocus: false }
 	)

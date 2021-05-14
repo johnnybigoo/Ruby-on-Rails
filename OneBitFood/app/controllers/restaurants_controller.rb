@@ -20,11 +20,11 @@ class RestaurantsController < ApplicationController
 	def filter_by_query
 		@restaurants = @restaurants.ransack(name_or_description_cont: params[:q]).result
 	end
-​
+
 	def filter_by_city
 		@restaurants = @restaurants.where(city: params[:city])
 	end
-​
+
 	def filter_by_category
 		@restaurants = @restaurants.select do |r|
 			r.category.title == params[:category]

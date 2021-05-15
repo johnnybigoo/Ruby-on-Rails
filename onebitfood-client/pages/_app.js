@@ -14,11 +14,12 @@ export default function MyApp({ Component, pageProps }) {
 
 			<main>
 				<Header />
-				<Container className="mt-6">
-					<RecoilRoot>
+				<RecoilRoot>
+					<Header />
+					<Container className='mt-6'>
 						<Component {...pageProps} />
-					</RecoilRoot>
-				</Container>
+					</Container>
+				</RecoilRoot>
 			</main>
 		</>
 	)

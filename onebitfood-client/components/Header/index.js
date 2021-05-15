@@ -1,9 +1,14 @@
+import { useState } from 'react';
 import { Navbar } from 'react-bootstrap';
 import Image from 'next/image';
 import Link from 'next/link';
 import SearchBox from '../SearchBox';
+import AddressModal from '../AddressModal';
+import { FaCrosshairs } from 'react-icons/fa';
 
 const Header = () => {
+	const [addressModalShow, setAddressModalShow] = useState(false);
+
 	return (
 		<Navbar bg="white" expand="lg" className="border-bottom border-custom-gray">
 			<Navbar.Brand className='mx-3'>
@@ -23,6 +28,19 @@ const Header = () => {
 			<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 
 			<Navbar.Collapse id='responsive-navbar-nav' className='justify-content-end'>
+				<Nav className='py-2 text-center'>
+					<span className='clickable_effect' onClick={() => setAddressModalShow(true)}>
+						<FaCrosshairs className='mb-1' /> Endereço
+          </span>
+					<AddressModal
+						show={addressModalShow}
+						onHide={() => setAddressModalShow(false)}
+						onShow={() => setAddressModalShow(true)}
+					/>
+				</Nav>
+
+
+
 				<SearchBox />
 			</Navbar.Collapse>
 		</Navbar>

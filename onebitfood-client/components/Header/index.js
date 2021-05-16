@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Navbar } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import Image from 'next/image';
 import Link from 'next/link';
 import SearchBox from '../SearchBox';
@@ -7,21 +7,22 @@ import AddressModal from '../AddressModal';
 import CartModal from '../CartModal';
 import { FaCrosshairs, FaShoppingBag } from 'react-icons/fa';
 
-const Header = () => {
+
+export default function Header() {
 	const [addressModalShow, setAddressModalShow] = useState(false);
 	const [cartModalShow, setCartModalShow] = useState(false);
 
 	return (
-		<Navbar bg="white" expand="lg" className="border-bottom border-custom-gray">
+		<Navbar bg='white' expand='lg' className='border-bottom border-custom-gray'>
 			<Navbar.Brand className='mx-3'>
-				<Link href="/restaurants">
+				<Link href='/restaurants'>
 					<a>
 						<Image
-							src="/logo.png"
+							src='/logo.png'
 							alt="OneBitFood"
 							width={200}
 							height={44}
-							className="clickable_effect"
+							className='clickable_effect'
 						/>
 					</a>
 				</Link>
@@ -43,7 +44,7 @@ const Header = () => {
 				<Nav className='py-2 text-center'>
 					<span className='clickable_effect' onClick={() => setAddressModalShow(true)}>
 						<FaCrosshairs className='mb-1' /> Endereço
-					</span>
+          </span>
 					<AddressModal
 						show={addressModalShow}
 						onHide={() => setAddressModalShow(false)}
@@ -55,5 +56,3 @@ const Header = () => {
 		</Navbar>
 	)
 }
-
-export default Header;

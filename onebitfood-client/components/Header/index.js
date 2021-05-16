@@ -31,7 +31,7 @@ const Header = () => {
 				<Nav className='py-2 text-center'>
 					<span className='clickable_effect' onClick={() => setAddressModalShow(true)}>
 						<FaCrosshairs className='mb-1' /> Endereço
-          </span>
+					</span>
 					<AddressModal
 						show={addressModalShow}
 						onHide={() => setAddressModalShow(false)}

@@ -49,7 +49,7 @@ export default function Cart(props) {
 								className='border px-1 border-custom-gray'
 							>
 								Remover
-                 </Button>
+                </Button>
 						</Col>
 					</Row>
 				</div>

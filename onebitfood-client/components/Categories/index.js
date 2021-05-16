@@ -24,7 +24,6 @@ export default function Categories() {
 			</Card>
 	}
 
-
 	return (
 		<>
 			<h3 className='fw-bold'>Categorias</h3>

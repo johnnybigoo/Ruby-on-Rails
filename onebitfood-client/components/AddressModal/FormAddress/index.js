@@ -98,7 +98,7 @@ export default function FormAddress(props) {
 							<div className="text-center pt-4">
 								<Button variant="custom-red" className='text-white' type="submit" size="md">
 									Confirmar endereço
-								</Button>
+              </Button>
 							</div>
 						</div>
 					}
